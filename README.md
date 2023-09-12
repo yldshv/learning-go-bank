@@ -1,5 +1,7 @@
-# learning-go-bank
+# Learning Project in GO
 
-Learning GO atm.
+Basic API with **JWT** Auth and **Postgres** as DB.
 
-This is a very basic GO API without heavy Frameworks like Gin or Fiber.
+### Things I have <u>not</u> used:
+- Web-Frameworks like Fiber or Gin
+- ORM like GORM

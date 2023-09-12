@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-type Storage interface{
+type Storage interface {
 	CreateAccount(*Account) error
 	DeleteAccount(int) error
 	UpdateAccount(*Account) error
@@ -54,7 +54,7 @@ func (s *PostgresStore) CreateAccountTable() error {
 }
 
 func (s *PostgresStore) CreateAccount(a *Account) error {
-	query :=	`insert into account
+	query := `insert into account
 	(first_name, last_name, number, balance, created_at)
 	values ($1, $2, $3, $4, $5)`
 
